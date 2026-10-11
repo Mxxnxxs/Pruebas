@@ -1,0 +1,214 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>HTML & CSS</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Museo</a>
+          <a href="#secc2">Ponentes</a>
+          <a href="#secc3">Libros</a>
+          <a href="#secc4">Cinematografia</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Museo del Louvre</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Museo del Louvre es uno de los espacios culturales más reconocidos y visitados del mundo, símbolo de la historia, el arte y la identidad de Francia, ubicado a orillas del río Sena, en el corazón de París, el Louvre ocupa el antiguo Palacio del Louvre, una construcción que inició en el siglo XIII como fortaleza ordenada por el rey Felipe Augusto para proteger la ciudad. A lo largo de los siglos, el edificio fue transformándose en residencia real, palacio renacentista y finalmente en un museo público que abrió sus puertas en 1793, tras la Revolución Francesa, desde entonces, el Louvre ha evolucionado hasta convertirse en un epicentro del arte universal, albergando más de 500 000 piezas que representan distintas épocas y civilizaciones: antigüedades egipcias, griegas, romanas y orientales; obras maestras del Renacimiento; pinturas y esculturas europeas, y colecciones dedicadas a las artes del Islam, entre muchas otras. Entre sus piezas más emblemáticas destacan la Mona Lisa de Leonardo da Vinci, la Venus de Milo, la Victoria de Samotracia y el Código de Hammurabi, entre innumerables tesoros de la humanidad.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Además de su invaluable colección, el museo es un referente arquitectónico, su estructura combina la majestuosidad del palacio clásico francés con la modernidad de la Pirámide de Cristal, diseñada por el arquitecto Ieoh Ming Pei e inaugurada en 1989, que hoy se ha convertido en un ícono contemporáneo de París, este contraste entre lo histórico y lo moderno refleja el espíritu del Louvre: un lugar donde el arte dialoga con el tiempo, conectando pasado, presente y futuro. Más que un simple museo, el Louvre es un centro vivo de conocimiento y creación, dedicado a la preservación, investigación y difusión del patrimonio artístico, cada año recibe millones de visitantes de todo el mundo, quienes encuentran en sus salas una experiencia que trasciende la contemplación estética para convertirse en un viaje por la historia de la humanidad. Visitar el Louvre es adentrarse en un universo de belleza, sabiduría e inspiración; es descubrir cómo el arte ha sido siempre un reflejo del pensamiento, la emoción y la cultura de los pueblos.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<a href="360visualizar.html">
+	        		   <img src="imagenes/img1b.png" title="Img 1b">
+	        		</a>
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>Museo de Louvre</p>
+	        		<!--texto para imagen a la derecha-->
+	        		<p>Haga click aqui para vista 360</p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Iconos de diversos exploradores / navegadores web usados para visualizar páginas web / documentos HTML.</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Icono del editor de Texto Sublime Text.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Festival</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En Festival Louvre Lumières, los asistentes podrán disfrutar de charlas con invitados especiales, conocer obras literarias que abren la mente, ver documentales y películas muy interesantes en un ambiente único bajo la pirámide.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p></p>
+		        <br><!--etiqueta para un brinco de renglón-->
+                <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+                <p></p>
+                <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img2.png" title="Img 2">
+        		<!--texto para la imagen-->
+        		<p></p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Ponentes</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El festival reúne a destacados autores y pensadores internacionales: Jorge Guerra, quien presentará Nobleza Negra y Poderes Ocultos, un análisis sobre la influencia histórica de las élites y las estructuras de poder; Antony Cyril Sutton, reconocido por su Trilogía de Wall Street, donde revela el papel del poder financiero en grandes acontecimientos del siglo XX; Marcelo Gullo, que expondrá su concepto de La Insubordinación Fundante, una teoría sobre la soberanía y el desarrollo de las naciones; y Juan Miguel Zunzunegui, quien compartirá Locura y Razón, una reflexión sobre la línea entre cordura, narrativa y percepción social, entre otros. Estos ponentes ofrecen una visión profunda y crítica sobre la historia, el pensamiento y las fuerzas que moldean nuestra realidad.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p></p>
+		        <br><!--etiqueta para un brinco de renglón-->
+                <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+                <p></p>
+                <br><!--etiqueta para un brinco de renglón-->
+                <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+                <p></p>
+             
+                
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img3.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p></p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Libros y Cinematografia</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El festival presenta una selección de obras fundamentales para comprender la relación entre poder, sociedad y control: 1984 de George Orwell, una novela distópica que revela cómo la vigilancia total y la manipulación del lenguaje pueden someter a una sociedad entera; Un Mundo Feliz de Aldous Huxley, que plantea un futuro donde el condicionamiento psicológico y el placer superficial reemplazan la libertad auténtica; The Rape of the Mind de Joost Meerloo, un análisis profundo sobre las técnicas de coerción mental y los mecanismos de manipulación psicológica utilizados por regímenes totalitarios; Confesiones de un Sicario Económico de John Perkins, un testimonio que expone cómo ciertos organismos financieros internacionales influyen en países enteros mediante deudas, presiones políticas y estrategias encubiertas; Propaganda de Edward Bernays. </p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El festival también incorpora obras audiovisuales que invitan a cuestionar las estructuras de poder contemporáneas: el documental Zeitgeist, que examina temas como la manipulación social, los sistemas económicos y las narrativas institucionales que influyen en la percepción colectiva; The Money Masters / Los Amos del Dinero (1996), un análisis histórico sobre el origen y funcionamiento de los bancos centrales, la creación del dinero y el impacto del sistema financiero en la política global; y Land of the Blind (2006), una película que aborda, mediante una metáfora política, cómo los regímenes autoritarios pueden nacer tanto del abuso del poder como del fanatismo revolucionario. Estas producciones ofrecen miradas críticas que complementan los ejes temáticos del festival sobre libertad, conciencia y control social.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+                <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+                <p></p>
+                <br><!--etiqueta para un brinco de renglón-->
+                <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+                <p></p>
+                <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img4.png" title="Img 4">
+        		<!--texto para la imagen-->
+        		<p></p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores...</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
