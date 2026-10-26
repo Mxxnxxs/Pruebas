@@ -120,12 +120,21 @@ header {
 	/*border: 5px solid #555;  /* For debugging */
 	width: 65%; /*ancho que tendra el contenedor con clase menu*/
 	display: flex; /*sera un elemento/item de tipo flex*/
-	justify-content: space-around; /*defino la alineación horizontal de los items hijos diciendo
+	justify-content: space-around;
+	align-items: flex-start;/*defino la alineación horizontal de los items hijos diciendo
 	cuando hay mas de uno distribuya el esapcio restante entre los espacios de cada elemento/item*/
 }
-.par-imgs-escritorio img{
-	width: 50%;
-	display: flex; /*sera un elemento/item de tipo flex*/
+.par-imgs-escritorio > img,
+.par-imgs-escritorio > a {
+	width: 49%;
+	flex-shrink: 0; /*sera un elemento/item de tipo flex*/
+}
+.par-imgs-escritorio > img {
+	display: block;
+}
+.par-imgs-escritorio > a img {
+	width: 100%;
+	display: block;
 }
 .par-imgs-escritorio img:hover{
   transform: scale(1.03);
@@ -191,6 +200,7 @@ header {
 .contenedor-imagen img{
 	display: flex; /*sera un elemento/item de tipo flex*/
 	width: 50%;
+	margin: 0 auto;
 	transition: 200ms;
 }
 .contenedor-imagen img:hover{
@@ -229,7 +239,8 @@ header {
 }
 .contenedor-imagen-secc4 img{
 	display: flex; /*sera un elemento/item de tipo flex*/
-	width: 50%;
+	width: 80%;
+	margin: 0 auto;
 	transition: 200ms;
 }
 .contenedor-imagen-secc4 img:hover{
